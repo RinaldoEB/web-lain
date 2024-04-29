@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-image: url(image/witewall_3_@2X.png);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    position: relative;
+    
+   
+}
+nav a img {
+    width: 200px;
+    height: 150px;
+}
+nav ul hr {
+    width: 100px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 135px;
+    right: 0;
+    height: 50vh;
+    width: 30%;
+    border-bottom-left-radius: 20px;
+    transform: translateX(100%);
+    transition: 1s;
+    opacity: 0;
+
+}
+
+nav .slide {
+    transform: translateX(0);
+    opacity: 1;
+}
+nav ul h3 {
+    letter-spacing: 2px;
+   
+
+}
+nav ul li {
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #b36e5b;
+    font-size: 20px;
+}
+
+.humberger input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -5px;
+   left: -9px;
+   z-index: 1;
+   opacity: 0;
+
+}
+
+.humberger span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.humberger input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg);
+
+}
+
+.humberger span:nth-child(3) {
+    transform-origin: 0 0;
+}
+
+.humberger input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+
+}
+
+.humberger span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.humberger input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(0px , -1px);
+
+
+}
+
+
+
+
+.jumbotron {
+    background-image: url(image/samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -400px;
+    background-attachment: fixed;
+    
+}
+.text h1 {
+    font-size: 40px;
+    
+}
+.text p {
+    font-size: 30px;
+}
+
+
+
+.jumbotron .text {
+    padding-top: 10%;
+    padding-left: 300px;
+    width: 700px;
+    height: 400px;
+    
+   
+    
+    
+}
+
+.jumbotron .text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #b36e5b;
+    border-radius: 10px;
+    margin-left: 120px;
+    
+}
+   
+
+
+
+.humberger {
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    margin-top: 60px;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.humberger span  {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #b36e5b;
+    border-radius: 20px;
+    transition: .3s;
+    
+
+}
+
+.container-about {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 40px;
+}
+
+.container-about hr {
+    width: 70px;
+    border-top: 3px solid black;
+}
+
+/* abou */
+.gambar-satu {
+    background-image: url(image/federica-galli--4qhiC6RmQw-unsplash.jpg);
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    margin-left: 300px;
+    margin-top: 150px;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+.gambar-satu .tulisannya {
+    background-color: rgb(230, 217, 193);
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    padding: 40px;
+    margin-top: 70px;
+    margin-left: 480px;
+    border-radius: 10px;
+}
+
+.tulisannya h3 {
+    font-size: 30px;
+    
+}
+
+.tulisannya p {
+    
+    font-weight: 20px;
+    
+   
+    
+}
+
+.gambar-dua {
+    background-image: url(image/mathieu-perrier-44OaWM_ObWk-unsplash.jpg);
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    margin-left: 65%;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.gambar-dua .tulisannya-dua {
+    background-color: rgb(230, 217, 193);
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    padding: 40px;
+    margin-top: 90px;
+    border-radius: 10px;
+    margin-left: -550px;
+    
+}
+
+.tulisannya-dua h3 {
+    font-size: 30px;
+}
+
+.tulisannya-dua p {
+    
+    font-weight: 20px;
+    
+   
+    
+}
+
+.kata-kata {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.kata-kata hr {
+    width: 100px;
+    border-bottom: 1px solid black;
+    
+   
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+footer p {
+    background-color: rgb(230, 217, 193);
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+
+
+/* responsive */
+
+@media  screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        justify-content: space-between;
+    }
+
+    .humberger {
+        margin-right: 30px;
+    }
+    
+    .jumbotron {
+       width: 100%;
+        height: 800px;
+        background-size: cover;
+        background-position-x: -700px;
+       background-attachment: local;
+       
+    }
+    .jumbotron .text {
+        padding-left: 80px;
+        padding-top: 100px;
+       
+
+        
+       
+    }
+
+    .container-about {
+        margin-top: -300px;
+    }
+
+    .gambar-satu {
+        background-image: url(image/federica-galli--4qhiC6RmQw-unsplash.jpg);
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        margin-left: 20px;
+        margin-top: 100px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    
+    
+    .gambar-satu .tulisannya {
+        background-color: rgb(230, 217, 193);
+        position: absolute;
+        width: 250px;
+        height: 100px;
+        padding: 20px 40px;
+        margin-top: 150px;
+        margin-left: 120px;
+        border-radius: 10px;
+        
+    }
+
+    .tulisannya h3 {
+        font-size: 20px;
+        margin-top: -11px;
+       
+    }
+    
+    .tulisannya p {
+       
+        font-size: 11px
+        
+        
+        
+        
+       
+        
+    }
+
+    .gambar-dua {
+        background-image: url(image/mathieu-perrier-44OaWM_ObWk-unsplash.jpg);
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        margin-left: 55%;
+        margin-top: 150px;
+        position: relative;
+        border-radius: 10px;
+        
+    }
+    
+    .gambar-dua .tulisannya-dua {
+        background-color: rgb(230, 217, 193);
+        position: absolute;
+        width: 250px;
+        height: 80px;
+        padding: 40px;
+        margin-top: 160px;
+        border-radius: 10px;
+        margin-left: -250px;
+        
+    }
+    
+    .tulisannya-dua h3 {
+        font-size: 20px;
+        margin-top: -20px;
+       
+    }
+    
+    .tulisannya-dua p {
+        
+       font-size: 11px
+       
+        
+    }
+
+    footer p {
+        font-size: 10px;
+        width: 90px;
+       
+    }
+    
+
+    
+
+    
+}
+
+
